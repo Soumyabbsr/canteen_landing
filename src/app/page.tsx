@@ -48,8 +48,10 @@ export default function LandingPage() {
   return (
     <div className="page-container">
       {/* Background warm ambient glow matching logo colors */}
-      <div className="bg-decor-circle bg-decor-1" aria-hidden="true" />
-      <div className="bg-decor-circle bg-decor-2" aria-hidden="true" />
+      <div className="bg-decor-wrapper" aria-hidden="true">
+        <div className="bg-decor-circle bg-decor-1" />
+        <div className="bg-decor-circle bg-decor-2" />
+      </div>
 
       {/* Download Status Toast */}
       {toastMessage && (
